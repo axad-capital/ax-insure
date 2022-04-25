@@ -1,0 +1,17 @@
+.footer-container {
+    height: 200px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.terms {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-container a {
+    text-decoration: none;
+}

@@ -1,3 +1,8 @@
+:root {
+    --mainBG: rgb(0, 109, 136);
+    --hoverBG: rgb(0, 69, 87);
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -31,7 +36,264 @@
 }
 
 .header-container {
+    width: 80%;
     display: flex;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.header {
+    width: 50%;
+}
+
+.header-title {
+    font-size: 50px;
+}
+
+.header-sub-title {
+    font-size: 20px;
+}
+
+.header-img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form > label {
+    font-weight: 600;
+}
+
+.form > input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.form-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: var(--mainBG);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-btn:hover {
+    background-color: var(--hoverBG);
+}
+
+.our-mission {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+    gap: 50px;
+}
+
+.mission-img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.mission-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.mission-info-container {
+    width: 50%;
+}
+
+.mission-title {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.mission-text {
+    margin-bottom: 20px;
+}
+
+.mission-btn {
+    text-decoration: none;
+    background-color: var(--mainBG);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.mission-btn:hover {
+    background-color: var(--hoverBG);
+}
+
+.steps-bg {
+    background: conic-gradient(rgba(0, 90, 112, 0.123) 0deg 70deg, white 70deg 250deg, rgba(0, 90, 112, 0.123) 250deg 30deg) ;
+    padding: 20px;
+}
+
+.steps-container {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.steps-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.steps {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 280px;
+}
+
+.steps-btn-container {
+    text-align: center;
+}
+
+.steps-btn {
+    text-decoration: none;
+    background-color: var(--mainBG);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.steps-btn:hover {
+    background-color: var(--hoverBG);
+}
+
+.we-help-container {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.we-help {
+    width: 50%;
+}
+
+.we-help-img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.we-help-img {
+    width: 100%;
+    max-width: 700px;
+}
+
+.start-BG {
+    background: conic-gradient(rgba(0, 90, 112, 0.123) 0deg 70deg, white 70deg 250deg, rgba(0, 90, 112, 0.123) 250deg 30deg) ;
+    padding: 20px;
+}
+
+.start-container {
+    display: flex;
+    width: 60%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.start {
+    width: 50%;
+    text-align: center;
+}
+
+.start-img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.start-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.prefer {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-container {
+        display: block;
+    }
+
+    .header {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-img-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .our-mission {
+        display: block;
+    }
+
+    .mission-img-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .mission-info-container {
+        width: 80%;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .we-help-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .we-help {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
+    .we-help-img-container {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .start-container {
+        display: block;
+    }
+    
+    .start {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
+    .start-img-container {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
