@@ -13,6 +13,9 @@ const ThanksLong = () => {
                     </div>
                 </div>
             </div>
+
+            <h1 style={{ textAlign: "center" }}>Check Out Your Health Insurance Quotes</h1>
+            <br />
         </div>
     )
 }

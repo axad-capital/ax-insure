@@ -11,6 +11,9 @@ const Thanks = () => {
                     <a className='number' href="tel:8773122944">(877) 312-2944</a>
                 </div>
             </div>
+
+            <h1 style={{ textAlign: "center" }}>Check Out Your Health Insurance Quotes</h1>
+            <br />
         </div>
     )
 }
