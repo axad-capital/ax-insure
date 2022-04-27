@@ -5,12 +5,25 @@ import AxHead from './ax-insure-header.png'
 import MissionImg from './ax-insure-mission.png'
 import WeHelpImg from './ax-insure-we-help.jpg'
 import StartImg from './ax-insure-start-now.png'
+import { v4 as uuidv4 } from 'uuid';
 
 const HomeComp = () => {
+
+    function handleFormSubmit() {
+        let formData = {
+            zip: document.getElementById('zip').value,
+            birth: document.getElementById('birth').value,
+            id: uuidv4()
+        }
+
+        localStorage.setItem('ax-insure-form', JSON.stringify(formData))
+        window.location.href = '/thanks'
+    }
+
     return (
         <div>
             <div className="nav">
-                <img className='logo' src={Logo} alt="logo" />
+                <img onClick={() => window.location.href = '/'} className='logo' src={Logo} alt="logo" />
                 <div className='call-us-container'>
                     <p className='call-us'>Request A Call</p>
                     <a className='number' href="tel:8773122944">(877) 312-2944</a>
@@ -34,7 +47,7 @@ const HomeComp = () => {
                         <input type="text" name="zip" id="zip" placeholder='Zipcode' />
                         <p>Enter Your 5 digit zipcode and your date of birth to get quotes immediately</p>
                         <br />
-                        <button className='form-btn'>Submit</button>
+                        <button onClick={handleFormSubmit} className='form-btn'>Submit</button>
                         <br />
                         <p>Prefer speaking to a health professional?</p>
                         <a className='prefer' href="tel:8773122944">Call (877) 312-2944 Today</a>

@@ -2,8 +2,26 @@ import React from 'react'
 import './quoteComp.css'
 import QuoteImg from './quote-img.jpg'
 import Logo from '../HomeComp/ax-insure-logo.png'
+import { v4 as uuidv4 } from 'uuid';
 
 const QuoteComp = () => {
+
+    function handleShortForm() {
+        let formData = {
+            first: document.getElementById('first').value,
+            last: document.getElementById('last').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            zip: document.getElementById('zip').value,
+            birth: document.getElementById('birth').value,
+            state: document.getElementById('state').value,
+            id: uuidv4()
+        }
+
+        localStorage.setItem('ax-insure-short-form', JSON.stringify(formData))
+        window.location.href = '/thanks-quote'
+    }
+
     return (
         <div>
             <div className="nav">
@@ -21,6 +39,11 @@ const QuoteComp = () => {
             </div>
 
             <div className="quote-page-form-container">
+                <label htmlFor="zip">Zipcode</label>
+                <br />
+                <input type="text" name="zip" id="zip" placeholder='Zipcode' />
+                <br />
+                <br />
                 <label htmlFor="first">First Name</label>
                 <br />
                 <input type="text" name="first" id="first" placeholder='First Name' />
@@ -48,7 +71,7 @@ const QuoteComp = () => {
                 <br />
                 <label htmlFor="state">State</label>
                 <br />
-                <select name='state'>
+                <select name='state' id='state'>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -104,7 +127,7 @@ const QuoteComp = () => {
                 <br />
                 <br />
                 <br />
-                <button className='form-page-btn'>Submit</button>
+                <button onClick={handleShortForm} className='form-page-btn'>Submit</button>
             </div>
         </div>
     )
