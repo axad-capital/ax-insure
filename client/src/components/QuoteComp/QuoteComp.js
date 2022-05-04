@@ -44,31 +44,37 @@ const QuoteComp = () => {
                 <input type="text" name="zip" id="zip" placeholder='Zipcode' />
                 <br />
                 <br />
+
                 <label htmlFor="first">First Name</label>
                 <br />
                 <input type="text" name="first" id="first" placeholder='First Name' />
                 <br />
                 <br />
+
                 <label htmlFor="last">Last Name</label>
                 <br />
                 <input type="text" name="last" id="last" placeholder='Last Name' />
                 <br />
                 <br />
+
                 <label htmlFor="email">Email</label>
                 <br />
                 <input type="email" name="email" id="email" placeholder='Email' />
                 <br />
                 <br />
+
                 <label htmlFor="phone">Phone Number</label>
                 <br />
                 <input type="tel" name="phone" id="phone" placeholder='Phone Number' />
                 <br />
                 <br />
+
                 <label htmlFor="birth">Birth Date</label>
                 <br />
                 <input type="date" name="birth" id="birth" />
                 <br />
                 <br />
+                
                 <label htmlFor="state">State</label>
                 <br />
                 <select name='state' id='state'>

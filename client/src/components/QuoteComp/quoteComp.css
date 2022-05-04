@@ -26,6 +26,16 @@
     border-radius: 20px;
 }
 
+.checkbox-container input {
+    width: auto;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .quote-page-form-container label {
     font-weight: 600;
 }
