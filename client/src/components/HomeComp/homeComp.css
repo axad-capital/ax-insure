@@ -22,6 +22,10 @@
     gap: 20px;
 }
 
+.line {
+    border-bottom: 1px solid black;
+}
+
 .call-us {
     font-size: 1.5vw;
     font-weight: 700;
@@ -34,6 +38,10 @@
     padding: 15px;
     border-radius: 10px;
     font-weight: 600;
+}
+
+.get-your-quote-title {
+    text-align: center;
 }
 
 .header-container {

@@ -6,6 +6,7 @@
 .title-quote-page-container {
     margin-top: 50px;
     text-align: center;
+    background: conic-gradient(rgba(0, 90, 112, 0.123) 0deg 70deg, rgb(228, 228, 228) 70deg 250deg, rgba(0, 90, 112, 0.123) 250deg 30deg)
 }
 
 .title-quote-page-img {
@@ -14,16 +15,40 @@
 }
 
 .quote-page-form-container {
-    width: 80%;
-    max-width: 300px;
-    margin: 50px auto;
+    width: 100%;
+    padding-top: 50px;
+    /* max-width: 300px; */
+    /* margin: 50px auto; */
+    /* width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto; */
+    background: conic-gradient(rgb(228, 228, 228) 0deg 70deg, rgba(0, 90, 112, 0.123) 70deg 250deg, rgb(228, 228, 228) 250deg 30deg) ;
+
 }
 
-.quote-page-form-container input, .quote-page-form-container select {
+.quote-page-form-container>div {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.quote-page-form-container input,
+.quote-page-form-container select {
     width: 100%;
+    max-width: 500px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 20px;
+}
+
+.underlying-title {
+    text-align: center;
 }
 
 .checkbox-container input {
@@ -40,8 +65,17 @@
     font-weight: 600;
 }
 
+.form-page-btn-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .form-page-btn {
     width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
     padding: 10px;
     cursor: pointer;
     color: white;
@@ -53,4 +87,11 @@
 
 .form-page-btn:hover {
     background-color: var(--hoverBG);
+}
+
+@media screen and (max-width: 1000px) {
+    .quote-page-form-container>div {
+        width: 80%;
+        display: block;
+    }
 }
