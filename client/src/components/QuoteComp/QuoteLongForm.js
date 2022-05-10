@@ -123,8 +123,8 @@ const QuoteLongForm = () => {
         })
 
         let formData = {
-            zip: document.getElementById('zip').value,
-            birth: document.getElementById('birth').value,
+            zip: storage[3],
+            birth: storage[5],
             id: uuidv4()
         }
 
