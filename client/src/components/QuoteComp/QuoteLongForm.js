@@ -144,14 +144,8 @@ const QuoteLongForm = () => {
 
 
             <div className="quote-page-form-container">
-                <h2 className='get-your-quote-title'>Get Your Health Insurance Quotes Fast</h2>
-                <br />
-                <div className="line"></div>
-                <br />
-                <div>
-                    {showForm === 3 ? <FormPageThree errorText={errorCheck} longFormSubmit={handleLongFormSub} last={previousForm} /> : showForm === 2 ? <FormPageTwo errorText={errorCheck} next={nextForm2} last={previousForm} /> : <FormPageOne next={nextForm1} errorText={errorCheck} />}
-                </div>
-                <br />
+
+
                 <div className="title-quote-page-container">
                     <br />
                     <h1 className="title-quote-page-title">WE HELP YOU FIND THE MOST AFFORDABLE COVERAGE</h1>
@@ -159,6 +153,17 @@ const QuoteLongForm = () => {
                     <img className='title-quote-page-img' src={QuoteImg} alt="quote" />
                 </div>
                 <br />
+                <div>
+                    <h2 className='get-your-quote-title'>Get Your Health Insurance Quotes Fast</h2>
+                    <br />
+                    <div className="line"></div>
+                    <br />
+                    <div>
+                        {showForm === 3 ? <FormPageThree errorText={errorCheck} longFormSubmit={handleLongFormSub} last={previousForm} /> : showForm === 2 ? <FormPageTwo errorText={errorCheck} next={nextForm2} last={previousForm} /> : <FormPageOne next={nextForm1} errorText={errorCheck} />}
+                    </div>
+                    <br />
+                    <br />
+                </div>
             </div>
         </div>
     )

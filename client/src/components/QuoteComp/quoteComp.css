@@ -38,11 +38,15 @@
 }
 
 .quote-page-form-container {
-    width: 100%;
-    padding-top: 50px;
+    /* width: 90%;
+    padding-top: 50px; */
+    padding: 50px;
     background: conic-gradient(rgb(228, 228, 228) 0deg 70deg, rgba(0, 90, 112, 0.123) 70deg 250deg, rgb(228, 228, 228) 250deg 30deg) ;
     text-align: center;
-
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
 }
 
 .quote-page-form-container>div {
@@ -55,7 +59,7 @@
 .quote-page-form-container input,
 .quote-page-form-container select {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 20px;
@@ -81,7 +85,7 @@
 
 .form-page-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
@@ -97,6 +101,15 @@
     background-color: var(--hoverBG);
 }
 
+@media screen and (max-width: 1005px) {
+
+    .quote-page-form-container {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .quote-page-form-container>div {
         width: 80%;
@@ -107,5 +120,6 @@
     .quote-page-form-container {
         margin: 0 auto;
         text-align: center;
+        display: block;
     }
 }
