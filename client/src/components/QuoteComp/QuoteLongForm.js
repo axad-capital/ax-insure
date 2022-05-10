@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../HomeComp/ax-insure-logo.png'
-import QuoteImg from './quote-img.jpg'
+// import QuoteImg from './quote-img.jpg'
+import QuoteImg from '../HomeComp/ax-insure-header.png'
 import { v4 as uuidv4 } from 'uuid';
 import FormPageOne from './FormPageOne';
 import FormPageTwo from './FormPageTwo';
