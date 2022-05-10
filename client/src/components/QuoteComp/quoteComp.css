@@ -3,6 +3,29 @@
     --hoverBG: rgb(0, 69, 87);
 }
 
+.consent {
+    font-size: 10px;
+}
+
+.long-form-steps {
+    color: rgb(34, 201, 34);
+    text-align: center;
+}
+
+#previous {
+    background-color: rgb(65, 105, 151);
+    max-width: 200px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#previous:hover {
+    background-color: red;
+}
+
 .title-quote-page-container {
     margin-top: 50px;
     text-align: center;
@@ -17,25 +40,16 @@
 .quote-page-form-container {
     width: 100%;
     padding-top: 50px;
-    /* max-width: 300px; */
-    /* margin: 50px auto; */
-    /* width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto; */
     background: conic-gradient(rgb(228, 228, 228) 0deg 70deg, rgba(0, 90, 112, 0.123) 70deg 250deg, rgb(228, 228, 228) 250deg 30deg) ;
+    text-align: center;
 
 }
 
 .quote-page-form-container>div {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-evenly; */
     width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
+    justify-content: center; */
     margin: 0 auto;
-    gap: 50px;
 }
 
 .quote-page-form-container input,
@@ -53,12 +67,6 @@
 
 .checkbox-container input {
     width: auto;
-}
-
-.checkboxes {
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 .quote-page-form-container label {
@@ -93,5 +101,11 @@
     .quote-page-form-container>div {
         width: 80%;
         display: block;
+        
+    }
+
+    .quote-page-form-container {
+        margin: 0 auto;
+        text-align: center;
     }
 }
