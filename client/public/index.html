@@ -24,6 +24,17 @@
     -->
 
   <script src="//insurance.mediaalpha.com/js/serve.js"></script>
+
+  <!-- START Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160150994-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-160150994-5');
+  </script>
+  <!-- END Global site tag (gtag.js) - Google Analytics -->
+
   <title>Ax Insure</title>
 </head>
 
@@ -63,28 +74,28 @@
     }
   </script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-  if (window.location.href === 'http://localhost:3000/thanks-quote' || window.location.href === 'https://axinsure.netlify.app/thanks-quote' || window.location.href === 'https://www.axinsure.com/thanks-quote') {
+    if (window.location.href === 'http://localhost:3000/thanks-quote' || window.location.href === 'https://axinsure.netlify.app/thanks-quote' || window.location.href === 'https://www.axinsure.com/thanks-quote') {
 
-    let data = JSON.parse(localStorage.getItem('ax-insure-short-form'))
+      let data = JSON.parse(localStorage.getItem('ax-insure-short-form'))
 
-    /* AXAD Capital / Health - Thank You Page */
-    var MediaAlphaExchange = {
-      "data": {
-        "zip": data.zip,
-        "birthday": data.birth
-      },
-      "placement_id": "j0KxC6daC0Rx10nihK7xRWG_xXcA9Q",
-      "sub_1": data.id,
-      "type": "ad_unit",
-      "version": 17
-    };
-    MediaAlphaExchange__load('mediaalpha_placeholder');
-  } else {
+      /* AXAD Capital / Health - Thank You Page */
+      var MediaAlphaExchange = {
+        "data": {
+          "zip": data.zip,
+          "birthday": data.birth
+        },
+        "placement_id": "j0KxC6daC0Rx10nihK7xRWG_xXcA9Q",
+        "sub_1": data.id,
+        "type": "ad_unit",
+        "version": 17
+      };
+      MediaAlphaExchange__load('mediaalpha_placeholder');
+    } else {
       localStorage.clear()
     }
-</script>
+  </script>
 
   <!-- everflow start -->
   <script type="text/javascript" src="https://www.a1jkghtrk.com/scripts/sdk/everflow.js"></script>
@@ -104,13 +115,13 @@
   </script>
 
   <script type="text/javascript" src="https://www.a1jkghtrk.com/scripts/sdk/everflow.js"></script>
-    <script type="text/javascript">
-      if (window.location.href === 'https://axinsure.netlify.app/thanks' || window.location.href === 'https://www.axinsure.com/thanks' || window.location.href === 'https://axinsure.netlify.app/thanks-quote' || window.location.href === 'https://www.axinsure.com/thanks-quote') {
-        EF.conversion({
-          offer_id: 1271,
-        });
-      }
-    </script>
+  <script type="text/javascript">
+    if (window.location.href === 'https://axinsure.netlify.app/thanks' || window.location.href === 'https://www.axinsure.com/thanks' || window.location.href === 'https://axinsure.netlify.app/thanks-quote' || window.location.href === 'https://www.axinsure.com/thanks-quote') {
+      EF.conversion({
+        offer_id: 1271,
+      });
+    }
+  </script>
   <!-- everflow end -->
 
 </body>
