@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
           <br />
           <p>This privacy notice for Out of the Box Designs LLC (doing business as Axad Capital) ("Axad Capital," "we," "us," or "our"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:</p>
           <ul>
-            <li>Visit our website at <span><a href='https://www.policyprofessor.com'>www.policyprofessor.com</a></span>, or any website of ours that links to this privacy notice</li>
+            <li>Visit our website at <span><a href='https://www.axinsure.com'>www.axinsure.com</a></span>, or any website of ours that links to this privacy notice</li>
             <li>Engage with us in other related ways ― including any sales, marketing, or events</li>
           </ul>
           <p>Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at ariel@axadcapital.com.</p>
