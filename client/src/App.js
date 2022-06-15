@@ -17,6 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/sem' element={<HomePage />} />
           <Route exact path='/quotes' element={<Quote />} />
           <Route exact path='/quote-long' element={<QuoteLongForm />} />
           <Route exact path='/thanks' element={<Thanks />} />
