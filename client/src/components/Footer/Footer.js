@@ -15,6 +15,7 @@ const Footer = () => {
             </div>
             <br />
             <p>&copy; 2022 AxInsure All rights reserved.</p>
+            <p style={{fontSize: '10px'}}>Ariel Quotes LLP, Ariel Tolome #17810234</p>
         </div>
     </div>
   )
