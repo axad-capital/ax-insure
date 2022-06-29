@@ -20,7 +20,14 @@ const HomeComp = () => {
         }
 
         localStorage.setItem('ax-insure-form', JSON.stringify(formData))
-        window.location.href = '/thanks'
+
+        if (location.pathname.split('/')[1] === 'goog') {
+            window.location.href = '/thanks/goog'
+        } else if (location.pathname.split('/')[1] === 'fb') {
+            window.location.href = '/thanks/fb'
+        } else {
+            window.location.href = '/thanks'
+        }
     }
 
     return (
@@ -29,7 +36,7 @@ const HomeComp = () => {
                 <img onClick={() => window.location.href = '/'} className='logo' src={Logo} alt="logo" />
                 <div className='call-us-container'>
                     <p className='call-us'>Request A Call</p>
-                    {location.pathname === '/goog' ? <a className='number' href="tel:18666350291">1(866) 635-0291 </a> : location.pathname === '/fb' ? <a className='number' href="tel:18774750942">1(877) 475-0942</a> : <a className='number' href="tel:8773122944">(877) 312-2944</a>}
+                    {location.pathname.split('/')[1] === 'goog' ? <a className='number' href="tel:18666350291">1(866) 635-0291 </a> : location.pathname.split('/')[1] === 'fb' ? <a className='number' href="tel:18774750942">1(877) 475-0942</a> : <a className='number' href="tel:8773122944">(877) 312-2944</a>}
                 </div>
             </div>
 
@@ -53,7 +60,7 @@ const HomeComp = () => {
                         <button onClick={handleFormSubmit} className='form-btn'>Submit</button>
                         <br />
                         <p>Prefer speaking to a health professional?</p>
-                        {location.pathname === '/goog' ? <a className='prefer' href="tel:18666350291">Call 1(866) 635-0291  Today</a> : location.pathname === '/fb' ? <a className='prefer' href="tel:18774750942">Call 1(877) 475-0942 Today</a> : <a className='prefer' href="tel:8773122944">Call (877) 312-2944 Today</a>}
+                        {location.pathname.split('/')[1] === 'goog' ? <a className='prefer' href="tel:18666350291">Call 1(866) 635-0291  Today</a> : location.pathname.split('/')[1] === 'fb' ? <a className='prefer' href="tel:18774750942">Call 1(877) 475-0942 Today</a> : <a className='prefer' href="tel:8773122944">Call (877) 312-2944 Today</a>}
                     </div>
                 </div>
                 <div className="header-img-container">
@@ -127,7 +134,7 @@ const HomeComp = () => {
                         <br />
                         <br />
                         <p>Prefer speaking to a health professional?</p>
-                        {location.pathname === '/goog' ? <a className='prefer' href="tel:18666350291">Call 1(866) 635-0291  Today</a> : location.pathname === '/fb' ? <a className='prefer' href="tel:18774750942">Call 1(877) 475-0942 Today</a> : <a className='prefer' href="tel:8773122944">Call (877) 312-2944 Today</a>}
+                        {location.pathname.split('/')[1] === 'goog' ? <a className='prefer' href="tel:18666350291">Call 1(866) 635-0291  Today</a> : location.pathname.split('/')[1] === 'fb' ? <a className='prefer' href="tel:18774750942">Call 1(877) 475-0942 Today</a> : <a className='prefer' href="tel:8773122944">Call (877) 312-2944 Today</a>}
                     </div>
                     <div className="start-img-container">
                         <img src={StartImg} alt="doc logo" className="start-img" />

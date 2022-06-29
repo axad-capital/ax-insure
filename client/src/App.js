@@ -9,6 +9,8 @@ import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
 import Terms from './pages/Legal/Terms';
 import Disclaimer from './pages/Legal/Disclaimer';
 import Partners from './pages/Legal/Partners';
+import ThanksGoog from './components/Thanks/ThanksGoog';
+import ThanksFb from './components/Thanks/ThanksFb';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route exact path='/quotes' element={<Quote />} />
           <Route exact path='/quote-long' element={<QuoteLongForm />} />
           <Route exact path='/thanks' element={<Thanks />} />
+          <Route exact path='/thanks/goog' element={<ThanksGoog />} />
+          <Route exact path='/thanks/fb' element={<ThanksFb />} />
           <Route exact path='/thanks-quote' element={<ThanksLong />} />
           <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route exact path='/terms' element={<Terms />} />
