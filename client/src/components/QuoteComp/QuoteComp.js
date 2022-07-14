@@ -3,6 +3,7 @@ import './quoteComp.css'
 import QuoteImg from './quote-img.jpg'
 import Logo from '../HomeComp/ax-insure-logo.png'
 import { v4 as uuidv4 } from 'uuid';
+import './quoteComp.css'
 
 const QuoteComp = () => {
 

@@ -43,7 +43,7 @@
     padding: 50px;
     background: conic-gradient(rgb(228, 228, 228) 0deg 70deg, rgba(0, 90, 112, 0.123) 70deg 250deg, rgb(228, 228, 228) 250deg 30deg) ;
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 50px;
     margin: 0 auto;
