@@ -22,6 +22,7 @@ const QuoteComp = () => {
         localStorage.setItem('ax-insure-short-form', JSON.stringify(formData))
         window.location.href = '/thanks-quote'
     }
+    // testing
 
     return (
         <div>
