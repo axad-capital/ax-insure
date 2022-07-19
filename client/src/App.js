@@ -16,6 +16,9 @@ import ThanksFb from './components/Thanks/ThanksFb';
 function App() {
   return (
     <div className="App">
+      <div style={{ opacity: '0', position: 'absolute', left: '50%' }}>
+        <a href="https://www.a1jkghtrk.com/28KL6/3F292Q1/?source_id={affiliate_id}&sub1={transaction_id}">offers!</a>
+      </div>
       <Router>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
